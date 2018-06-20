@@ -206,6 +206,11 @@
 
 	* 带计数从头遍历即可。
 
+##832 flipAndInvertImage
+> 按行翻转并取反二进制矩阵。
+
+	* 按要求遍历。
+
 ##840 numMagicSquaresInside
 > 确定矩阵内有多少幻方。
 
