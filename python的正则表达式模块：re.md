@@ -1,8 +1,8 @@
-#Python:re模块
+# Python:re模块
 * python中的re模块封装了正则表达式的全部功能，可以大幅简化在字符串中查询相应内容的时间。
 
 
-##常见符号和元字符：
+## 常见符号和元字符：
 * **普通字符：匹配自身**
 	* abc匹配abc
 * **'.'： 匹配除了换行符'\n'外的所有字符（DOTALL中也能用于换行符）**
@@ -25,7 +25,7 @@
 * **()：分组**
 	* (abc){2}a(123|456)c匹配abcabca456c
 	 
-###预定义字符集
+### 预定义字符集
 * \d：数字：[0-9]
 * \D：非数字:[^\d]
 * \s：匹配任何空白字符:[<空格>\t\r\n\f\v]
@@ -37,15 +37,15 @@
 * \b：匹配单词边界，例如'er\b' 可以匹配"never" 中的 'er'，但不能匹配 "verb" 中的 'er'。
 * \B：[^\b]
 
-###分组的特殊用法
+### 分组的特殊用法
 * 被()括起来的表达式将作为分组，从表达式左边开始没遇到一个分组的左括号“（”，编号+1.分组表达式作为一个整体，可以后接数量词。表达式中的|仅在该组中有效。
 * (?P<name>)：分组，除了原有的编号外再指定一个额外的别名，如：(?P<id>abc){2}
 * (?P=name)：引用别名为<name>的分组匹配到字符串，如：(?P<id>\d)abc(?P=id)
 * \<number>：引用编号为<number>的分组匹配到字符串，如：(\d)abc\1
 
-##re模块中的常用函数
+## re模块中的常用函数
 
-###compile()： 返回一个编译过的正则表达式模式
+### compile()： 返回一个编译过的正则表达式模式
 ```
 re.compile(pattern,flags=0)
 
@@ -71,13 +71,13 @@ print(rr.findall(tt))   #查找所有包含'oo'的单词
 ['good', 'cool']
 ```
 
-###re.match(pattern, string[, flags])
+### re.match(pattern, string[, flags])
 **这个方法将会从string（我们要匹配的字符串）的开头开始，尝试匹配pattern，一直向后匹配，如果遇到无法匹配的字符，立即返回 None，如果匹配未结束已经到达string的末尾，也会返回None。两个结果均表示匹配失败，否则匹配pattern成功，同时匹配终止，不再对 string向后匹配。**
 
 ```
 # -*- coding: utf-8 -*-
   
-#导入re模块
+# 导入re模块
 import re
   
 # 将正则表达式编译成Pattern对象，注意hello前面的r的意思是“原生字符串”
@@ -176,7 +176,7 @@ print "m.end(2):", m.end(2)
 print "m.span(2):", m.span(2)
 print r"m.expand(r'\g \g\g'):", m.expand(r'\2 \1\3')
   
-### output ###
+###  output ### 
 # m.string: hello world!
 # m.re: 
 # m.pos: 0
@@ -192,7 +192,7 @@ print r"m.expand(r'\g \g\g'):", m.expand(r'\2 \1\3')
 # m.expand(r'\2 \1\3'): world hello!
 ```
 
-###re.search(pattern, string[, flags])
+### re.search(pattern, string[, flags])
 **search方法与match方法极其类似，区别在于match()函数只检测re是不是在string的开始位置匹配，search()会扫描整个string查找匹配，match（）只有在0位置匹配成功的话才有返回，如果不是开始位置匹配成功的话，match()就返回None。同样，search方法的返回对象同样match()返回对象的方法和属性。**
 ```
 #导入re模块
@@ -206,11 +206,11 @@ match = re.search(pattern,'hello world!')
 if match:
   # 使用Match获得分组信息
   print match.group()
-### 输出 ###
+###  输出 ### 
 # world
 ```
 
-###re.split(pattern, string[, maxsplit])
+### re.split(pattern, string[, maxsplit])
 **按照能够匹配的子串将string分割后返回列表。maxsplit用于指定最大分割次数，不指定将全部分割。**
 ```
 import re
@@ -218,12 +218,12 @@ import re
 pattern = re.compile(r'\d+')
 print re.split(pattern,'one1two2three3four4')
   
-### 输出 ###
+###  输出 ### 
 # ['one', 'two', 'three', 'four', '']
 
 ```
 
-###re.findall(pattern, string[, flags]) 
+### re.findall(pattern, string[, flags]) 
 **搜索string，以列表形式返回全部能匹配的子串。**
 ```
 import re
@@ -231,11 +231,11 @@ import re
 pattern = re.compile(r'\d+')
 print re.findall(pattern,'one1two2three3four4')
   
-### 输出 ###
+###  输出 ### 
 # ['1', '2', '3', '4']
 ```
 
-###re.finditer(pattern, string[, flags])
+### re.finditer(pattern, string[, flags])
 **搜索string，返回一个顺序访问每一个匹配结果（Match对象）的迭代器。**
 ```
 import re
@@ -244,11 +244,11 @@ pattern = re.compile(r'\d+')
 for m in re.finditer(pattern,'one1two2three3four4'):
   print m.group(),
   
-### 输出 ###
+###  输出 ### 
 # 1 2 3 4
 ```
 
-###re.sub(pattern, repl, string[, count])
+### re.sub(pattern, repl, string[, count])
 **使用repl替换string中每一个匹配的子串后返回替换后的字符串。
 当repl是一个字符串时，可以使用\id或\g、\g引用分组，但不能使用编号0。
 当repl是一个方法时，这个方法应当只接受一个参数（Match对象），并返回一个字符串用于替换（返回的字符串中不能再引用分组）。
@@ -266,12 +266,12 @@ def func(m):
   
 print re.sub(pattern,func, s)
   
-### output ###
+###  output ### 
 # say i, world hello!
 # I Say, Hello World!
 ```
 
-###re.subn(pattern, repl, string[, count])
+### re.subn(pattern, repl, string[, count])
 **返回 (sub(repl, string[, count]), 替换次数)。**
 ```
 import re
@@ -286,7 +286,7 @@ def func(m):
   
 print re.subn(pattern,func, s)
   
-### output ###
+###  output ### 
 # ('say i, world hello!', 2)
 # ('I Say, Hello World!', 2)
 ```

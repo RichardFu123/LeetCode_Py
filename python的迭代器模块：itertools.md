@@ -1,4 +1,4 @@
-#itertools模块
+# itertools模块
 * itertools模块能够快速创建迭代器。
 * itertools模块一般分为三类，列举了一些常用的迭代器：
 	* 无限迭代器
@@ -16,26 +16,26 @@
 		* permutations
 		* combinations和combinations_with_replacement
 
-##无限迭代器
-###count
+## 无限迭代器
+### count
 ```
 itertools.count(start=0,step=1)
 ```
 * 返回以start为开头，步长step的值。
 
-###cycle
+### cycle
 ```
 itertools.cycle(iterable)
 ```
 * 保存对象的副本，并无限重复返回每一个元素。
 
-###repeat
+### repeat
 ```
 itertools.repeat(object[,times])
 ```
 * 重复返回对象[次]。
 
-##终止于最短输入序列的迭代器
+## 终止于最短输入序列的迭代器
 * 这部分包括如下：
 ```
 chain()     
@@ -53,33 +53,33 @@ izip()
 izip_longest()
 ```
 
-###chain
+### chain
 ```
 itertools.chain(*iterables)
 ```
 * 将所有iterable拼接后迭代返回。
 
-###compress
+### compress
 ```
 itertools.compress(data,selectors)
 ```
 * 返回data中对应selectors为True的元素。
 * 相当于把selectors当做滤镜套在了data上。
 
-###ifilter和ifilterfalse
+### ifilter和ifilterfalse
 ```
 itertools.ifilter(predicate,iterable)
 itertools.ifilterfalse(predicate,iterable)
 ```
 * 返回predicate后结果为True：ifilter/False：ifilterfalse的iterable元素。
 
-###imap
+### imap
 ```
 itertools.imap(function,*iterables)
 ```
 * 返回迭代序列中每一个元素经过function处理后的值。
 
-###izip和izip_longest
+### izip和izip_longest
 ```
 itertools.izip(*iterables)
 itertools.izip_longest(*iterables[,fillvalue=none])
@@ -87,14 +87,14 @@ itertools.izip_longest(*iterables[,fillvalue=none])
 * izip:用最短iterable来zip
 * izip_longest:用最长序列来zip，短序列填充fillvalue
 
-##组合生成器
-###product
+## 组合生成器
+### product
 ```
 itertools.product(*iterables[,repeat=1])
 ```
 * 对*iterables进行笛卡尔积运算。
 
-###permutations
+### permutations
 ```
 itertools.permutations(iterable[,r])
 ```
@@ -123,7 +123,7 @@ for item in itertools.permutations(range(3)):
 (2, 1, 0)
 ```
 
-###combinations和combinations_with_replacement
+### combinations和combinations_with_replacement
 ```
 itertools.combinations(iterable, r)
 itertools.combinations_with_replacement(iterable, r)
