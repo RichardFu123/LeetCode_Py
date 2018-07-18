@@ -1,7 +1,14 @@
 ## 046 permute
+> list
 > 给出给定列表的所有全排列。
 
 * itertools中的permutations(iterable)可以迭代返回iterable中的全排列。
+
+## 077 combine
+> list
+> 返回1~n的全部k位组合。
+
+* 用itertools的combinations迭代器即可解决。
 
 ## 078 subsets
 > list
@@ -10,6 +17,20 @@
 * 用itertools中的combinations可以轻松解决问题。
 * combinations(iterable，i)可以迭代返回iterable中所有长度为i的组合形式。
 * []空集也是子集之一。
+
+## 137 singleNumber2
+> list
+> 找出数组内只出现过一次的数。
+
+* 用collections中的Counter统计次数。
+* 用Counter的most_common()方法来给出从高到低的统计二维数列。
+* 其中最后一项的第一项既是结果。
+
+## 260 singleNumber
+> list
+> 找出数组中两个只出现过一次的数。
+
+* 同137题。
 
 ## 338 countBits
 > bit manipulation
@@ -29,6 +50,12 @@
 
 * 在函数内保存两组字典，保存字符串和hash值，交换输出即可。
 
+## 789 escapeGhosts
+> math
+> 确保ghosts数组中都比（0，0）离target远。
+
+* 计算出全部ghosts离target的路径长度。
+* 对比target与原点的路径长度即可。
 
 ## 807 maxIncreaseKeepingSkyline
 > list
