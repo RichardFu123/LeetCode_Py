@@ -43,6 +43,12 @@
 * 可知，每一位上的1的个数组合即为前面所有值+1：
 * 第四位：1，2，2，3，2，3，3，4.
 
+## 442 findDuplicates
+> list
+> 找到数组中哪些数字出现了两次。
+
+* 排序后遍历即可。
+
 ## 535 encodeAndDecodeTinyurl
 > math 
 > hash table
