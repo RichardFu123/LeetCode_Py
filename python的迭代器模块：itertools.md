@@ -10,7 +10,7 @@
 	* 终止于最短输入序列的迭代器
 		* chain
 		* compress
-		* ifilter和ifilterfalse
+		* takewhile和filterfalse
 		* zip_longest
 	* 组合生成器
 		* product
@@ -139,7 +139,7 @@ shuangsile
 * 返回data中对应selectors为True的元素。
 * 相当于把selectors当做滤镜套在了data上。
 
-### takewhile和ifilterfalse
+### takewhile和filterfalse
 * `itertools.takewhile(predicate,iterable)`
 * `itertools.filterfalse(predicate,iterable)`
 
