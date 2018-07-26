@@ -26,6 +26,14 @@
 * 用Counter的most_common()方法来给出从高到低的统计二维数列。
 * 其中最后一项的第一项既是结果。
 
+## 162 findPeakElement
+> binary search
+> 找出数组的任意一个峰值。
+
+* 先确定首尾。
+* 再进行搜索。
+* 搜索时用try减少麻烦。
+
 ## 260 singleNumber
 > list
 > 找出数组中两个只出现过一次的数。
