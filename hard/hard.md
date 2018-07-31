@@ -26,3 +26,13 @@
 * 用collections中的deque来创建maxlen为k的固定长度双向队列。
 * 将nums[:K]先输进deque，得到起始点的max值
 * 将nums[k:]一次遍历输入deque，每次获取max值即可。
+
+## 878 nthMagicalNumber
+> binary search
+> math
+> 找到第N个A或者B的可整除数
+
+* C能容下m个A
+* C能容下n个B
+* C能容下k个A与B的最小公倍数
+* 则C是A与B的第m+n-k个可整除数
