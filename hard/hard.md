@@ -5,6 +5,12 @@
 
 * 用try捕捉异常即可。 
 
+## 072 minDistance
+> Dynamic Programming
+> 判断两个字符串通过最少多少次操作才会相同。
+
+* 
+
 ## 149 maxPoints
 > math
 > iterable
