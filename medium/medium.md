@@ -82,6 +82,13 @@
 
 * 在函数内保存两组字典，保存字符串和hash值，交换输出即可。
 
+## 647 countSubstrings
+> DP
+> string
+> 找到字符串有多少个回文子串。
+
+* (x，x)保证了aba类型的全部回文子串，(x,x+1)保证了aa类型的子串。
+
 ## 789 escapeGhosts
 > math
 > 确保ghosts数组中都比（0，0）离target远。
