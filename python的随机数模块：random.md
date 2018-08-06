@@ -4,6 +4,50 @@
 
 ## 常用函数
 
+### random.seed()
+    random.seed(a=None, version=2)
+
+* 设置随机种子 ，用于同步不同运行环境的随机数。
+### random.getstate()
+    random.getstate()
+* 获得当前状态，用于恢复状态
+
+### random.setstate()
+    random.setstate(state)
+* 恢复状态
+```
+>>> import random
+>>> s=random.getstate()
+>>> random.random()
+0.15441857485858956
+>>> random.random()
+0.6330314601528841
+>>> random.setstate(s)
+>>> random.random()
+0.15441857485858956
+>>> random.random()
+0.6330314601528841
+>>> random.random()
+0.04725013105129261
+```
+
+### random.getrandbits()
+    random.getrandbits(k)
+* 生成占内存k位以内的随机整数，硬核秃头专属。
+```
+>>> import random
+>>> random.getrandbits(10)
+674
+>>> random.getrandbits(10)
+10
+>>> random.getrandbits(10)
+745
+>>> random.getrandbits(10)
+560
+>>> random.getrandbits(10)
+162
+```
+
 ### random.random()
     random.random()
 * 随机产生一个[0,1.)数字。
