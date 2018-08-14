@@ -89,6 +89,12 @@
 
 * (x，x)保证了aba类型的全部回文子串，(x,x+1)保证了aa类型的子串。
 
+## 654 constructMaximumBinaryTree
+> tree
+> 从最大值开始，左子树和右子树分别由左侧和右侧的最大值构成。
+
+* 递归调用即可。
+
 ## 789 escapeGhosts
 > math
 > 确保ghosts数组中都比（0，0）离target远。
