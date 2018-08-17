@@ -18,6 +18,12 @@
 * combinations(iterable，i)可以迭代返回iterable中所有长度为i的组合形式。
 * []空集也是子集之一。
 
+## 094 inorderTraversal
+> tree
+> 返回中序遍历
+
+* 递归返回
+
 ## 137 singleNumber2
 > list
 > 找出数组内只出现过一次的数。
@@ -33,6 +39,12 @@
 * 先确定首尾。
 * 再进行搜索。
 * 搜索时用try减少麻烦。
+
+## 216 combinationSum3
+> list
+> 找到1-9的和为n的k个数的组合
+
+* combinations解决
 
 ## 226 invertTree
 > tree
@@ -102,6 +114,12 @@
 
 * 递归调用即可。
 
+## 677 MapSum
+> trie
+> 设计实现MapSum功能
+
+* 用字典。
+
 ## 789 escapeGhosts
 > math
 > 确保ghosts数组中都比（0，0）离target远。
@@ -115,3 +133,10 @@
 
 * 用zip获得列的排列数组。
 * 遍历原数组，用行的最大值与列的最大值的较小值减去原数累加即可。
+
+## 814 pruneTree
+> tree
+> 将二叉树所有只含0的子树去除。
+
+* 用递归调用，目标是所有左右子叶都为null且val为0的节点。
+* 由于递归调用是从树的末端开始，故可以去除全部为0分支。
