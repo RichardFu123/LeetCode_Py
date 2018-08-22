@@ -70,6 +70,12 @@
 * 可知，每一位上的1的个数组合即为前面所有值+1：
 * 第四位：1，2，2，3，2，3，3，4.
 
+## 347 topKFrequent
+> list
+> 统计列表中出现最多的k个元素。
+
+* 在Python中，调用collections中的Counter即可。
+
 ## 413 numberOfArithmeticSlices
 > dynamic programming
 > list
@@ -140,3 +146,10 @@
 
 * 用递归调用，目标是所有左右子叶都为null且val为0的节点。
 * 由于递归调用是从树的末端开始，故可以去除全部为0分支。
+
+## 890 findAndReplacePattern
+> string
+> 找到words中所有符合pattern的单词。
+
+* 制作一个翻译器，其核心是一个字典，用字母为键，用字母出现的顺序为值。
+* 如上制作的翻译器，可以保证同样pattern的单词的输出均一致。
