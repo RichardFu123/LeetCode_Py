@@ -4,6 +4,12 @@
 
 * itertools中的permutations(iterable)可以迭代返回iterable中的全排列。
 
+## 047 permuteUnique
+> list
+> 给出列表中的不重复全排列.
+
+* 在046的基础上用set去重即可.
+
 ## 077 combine
 > list
 > 返回1~n的全部k位组合。
