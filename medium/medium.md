@@ -53,6 +53,12 @@
 * 再进行搜索。
 * 搜索时用try减少麻烦。
 
+## 215 findKthLargest
+> list
+> 找出列表中第k大的数字.
+
+* 用list的sort就能解决.
+
 ## 216 combinationSum3
 > list
 > 找到1-9的和为n的k个数的组合
