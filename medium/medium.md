@@ -10,6 +10,12 @@
 
 * 在046的基础上用set去重即可.
 
+## 075 sortColors
+> list
+> 将列表原地排序
+
+* 用列表的sort().
+
 ## 077 combine
 > list
 > 返回1~n的全部k位组合。
