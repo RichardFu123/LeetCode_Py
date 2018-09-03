@@ -1,3 +1,9 @@
+## 022 generateParenthesis
+> list
+> 生成全部可能的正确括号组合.
+
+* 用yield来做迭代器.
+
 ## 046 permute
 > list
 > 给出给定列表的所有全排列。
