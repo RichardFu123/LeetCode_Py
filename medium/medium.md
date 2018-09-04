@@ -147,6 +147,17 @@
 
 * 在函数内保存两组字典，保存字符串和hash值，交换输出即可。
 
+## 540 singleNonDuplicate
+> list
+> binarySearch
+> 找到有序列表中的单一元素
+
+* 为了O(log n)时间复杂度故使用二分搜索.
+* 每次根据mi的值来确定单值的位置:
+	* 如果mid前有偶数个值,则mid应该与mid+1相等.
+	* 如果mid前有奇数个值,则mid应该与mid-1相等.
+	* 否则,则单值出现在mid之前.
+
 ## 647 countSubstrings
 > DP
 > string
