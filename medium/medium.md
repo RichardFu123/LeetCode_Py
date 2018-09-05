@@ -140,6 +140,14 @@
 
 * 排序后遍历即可。
 
+## 451 frequencySort
+> string
+> 将字符串转化成由多到少的排列.
+
+* 转化成列表进行排序.
+* 遍历排序过的列表,将同字符集合分割.
+* 用sort方法对列表元素的长度进行排序.
+
 ## 535 encodeAndDecodeTinyurl
 > math 
 > hash table
