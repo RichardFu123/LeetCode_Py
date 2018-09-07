@@ -148,6 +148,12 @@
 * 遍历排序过的列表,将同字符集合分割.
 * 用sort方法对列表元素的长度进行排序.
 
+## 462 minMoves2
+> list
+> 求将数列中所有数字变为一致的最小步数.
+
+* 既是将所有数都变为中位数.
+
 ## 535 encodeAndDecodeTinyurl
 > math 
 > hash table
