@@ -179,6 +179,12 @@
 	* 如果mid前有奇数个值,则mid应该与mid-1相等.
 	* 否则,则单值出现在mid之前.
 
+## 611 triangleNumber
+> list
+> 确定数组内有多少组合是合法的三角形三个边长(任意两边和不小于第三边)
+
+* 遍历判断即可.
+
 ## 647 countSubstrings
 > DP
 > string
