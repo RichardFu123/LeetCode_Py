@@ -225,6 +225,13 @@
 * 用递归调用，目标是所有左右子叶都为null且val为0的节点。
 * 由于递归调用是从树的末端开始，故可以去除全部为0分支。
 
+## 861 matrixScore
+> list
+> greedy
+> 算出给定矩阵进行任意行列数值反置后的行求和最大值
+
+* 最大值一定是第一列全为1的,之后同理.
+
 ## 890 findAndReplacePattern
 > string
 > 找到words中所有符合pattern的单词。
