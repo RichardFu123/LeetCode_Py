@@ -211,6 +211,13 @@
 * 计算出全部ghosts离target的路径长度。
 * 对比target与原点的路径长度即可。
 
+## 797 allPathsSourceTarget
+> list
+> DFS
+> 找到从数列头到数列尾的全部路径.
+
+* 使用深度优先搜索,将每一条路径输出即可.
+
 ## 807 maxIncreaseKeepingSkyline
 > list
 > 在一个二维数组内，将每一个值变成行、列最大值的较小值需要多少。
