@@ -4,6 +4,12 @@
 
 * 用yield来做迭代器.
 
+## 039 combinationSum
+> list
+> 生成用candidates中的元素(不限次数)累加的到target的所有组合.
+
+* 用DFS来做.
+
 ## 046 permute
 > list
 > 给出给定列表的所有全排列。
