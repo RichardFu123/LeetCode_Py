@@ -106,6 +106,14 @@
 
 * 用递归调用，交换左右子叶，并对左右子叶也执行翻转函数。
 
+## 241 diffWaysToCompute
+> list
+> string
+> Divide and Conquer
+> 算出输入计算式的所有可能的优先级计算结果.
+
+* 用递归依次将输入字符串按运算符号进行分割.
+
 ## 260 singleNumber
 > list
 > 找出数组中两个只出现过一次的数。
