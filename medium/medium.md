@@ -182,6 +182,13 @@
 
 * 在函数内保存两组字典，保存字符串和hash值，交换输出即可。
 
+## 537 complexNumberMultiply
+> string
+> 对两个输入的字符串进行复数相乘
+
+* 将字符串中的i替换成j之后直接用python的复数乘法进行处理.
+* 再按要求拼接成字符串输出即可.
+
 ## 540 singleNonDuplicate
 > list
 > binarySearch
