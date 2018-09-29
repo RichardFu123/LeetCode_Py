@@ -137,6 +137,15 @@
 
 * 同137题。
 
+## 287 findDuplicate
+> list
+> Two Pointers
+> 用O(n*n)时间内,O(1)空间内,不改变数组的情况下找到重复数.
+> 数组元素范围1~n,数组有n+1位,重复数可能重复多次.
+
+* 由于元素的特殊性,若将其值作为索引,则可以将整个数组转化成一个单向链表.
+* 之后用单向链表查找重复元素的算法即可.
+
 ## 338 countBits
 > bit manipulation
 > dynamic programming
